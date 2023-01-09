@@ -147,6 +147,11 @@ tbody tr:last-of-type {
   border-bottom: 2px solid #3f6bca;
 }
 
+.post_table_p {
+  padding-top: 4em;
+  padding-bottom: 0.5em;
+}
+
 /* FORM */
 input {
   padding: 5px;
@@ -225,9 +230,9 @@ footer a {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
   main {
-    padding: 1em;
+    padding: 2em;
   }
 
   h1 {
@@ -256,10 +261,10 @@ footer a {
     background-color: rgb(134, 134, 134);
   }
   aside h2 {
-    font-size: ;
+    font-size: 2em;
   }
   footer {
-    font-size: ;
+    font-size: 1.4em;
   }
 
   main article table {
@@ -268,7 +273,19 @@ footer a {
 }
 
 @media screen and (min-width: 1200px) {
-  body {
-    background-color: rgb(134, 148, 84);
+  header {
+    display: flex;
+    padding-top: 1.3em;
+    padding-bottom: 0.1em;
+    font-size: 1.4em;
+    justify-content: space-between;
+  }
+  header div {
+    display: flex;
+    align-items: center;
+  }
+  header nav li {
+    display: inline;
+    padding-right: 0.8em;
   }
 }
